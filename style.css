@@ -1,42 +1,77 @@
+/* By giving asterik(*) setting it to universal
+ so the width you set is the width you get  */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url("https://i.ibb.co/vsXPX8V/defocused-image-of-lights-255379.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  
-  #title {
-    font-size: 30px;
-    text-align: center;
-  }
-  
+  background-image: url("https://i.ibb.co/vsXPX8V/defocused-image-of-lights-255379.jpg");
+  /* A background-image that will not scroll with the page (fixed) */
+  background-attachment: fixed;
+  /* Resize the background image to cover the entire container */
+  background-size: cover;
+}
+
+#title {
+  font-size: 30px;
+  text-align: center;
+}
+
+#image,
+figcaption {
+  display: block;
+  margin:auto;
+  font-weight: bold;
+  height: auto;
+   
+}
+#tribute-info {
+  font-size: 20px;
+  text-align: center;
+}
+p,
+h3 {
+  text-align: left;
+}
+
+footer {
+  margin:auto;
+  background-color: rgba(143, 235, 216, 0.3);
+  border: 7px groove;
+  border-radius: 30px;
+  border-color: rgba(143, 235, 216);
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+}
+
+/* media query for mobiles */
+
+@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 640px){ 
+
   #image,
   figcaption {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    font-weight: bold;
-    max-width: 100%;
-    height: auto;
+  
+    width:100%;
+    
   }
-  #tribute-info {
-    font-size: 20px;
-    text-align: center;
-  }
-  p,
-  h3 {
-    text-align: left;
+
+}
+/* media query for laptop */
+
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px) {
+
+  #image,
+  figcaption {
+  
+    width:50%;
+    
   }
   
-  footer {
-    margin: 0 auto;
-    background-color: rgba(143, 235, 216, 0.3);
-    border: 7px groove;
-    border-radius: 30px;
-    border-color: rgba(143, 235, 216);
-    box-sizing: border-box;
-    width: 400px;
-    height: 100px;
-    padding: 5px;
-  }
-  
+}
+
